@@ -1,0 +1,6 @@
+DIKI is a VAE-based neural network for analyzing conformations in Molecular Dynamics trajectories. 
+Including codes:
+   1. align a dcd trajectory to a reference structure and output a npz file of aligned Cartesian coordinates.
+   2. build a VAE model
+   3. use HDBSCAN iteratively updating the latent space
+   4. plot the similarity heatmap
