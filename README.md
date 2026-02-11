@@ -1,13 +1,13 @@
 
 ## data file
 
-The data file is large and hosted on **Zenodo**:
+The data file is large and hosted on **Mendeley Data**:
 
-**DOI**: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
+**DOI**: [(https://doi.org/10.5281/XXXXXXX)
 
-# Files 
- "tripeptide_nowater.dcd" #Exercise 1 trajectory files
- "tripeptide_nowater.psf" #Exercise 1 topology files
- "tri_sin_phi_data.npz" #Exercise 1, 2 analyzing data 
- "cln025_aligned.npz" #Exercise 3 CLN025 data
-"chig_sin_rmsd_rg_data.npz" #Exercise 3 CLN025 analyzing data(only ) 
+# tripeptide_cln025_data
+"tripeptide_nowater.dcd" : Exercise 1 (trajectory files of alanine tripeptide removing water molecules and ions)
+ "tripeptide_nowater.psf": Exercise 1 (topology files of alanine tripeptide removing water molecules and ions)
+"tri_sin_phi_data.npz": Exercise 1, 2 (Extract the sine values of six backbone dihedral angles of tripeptide trajectory, together with the corresponding dihedral angle values (φ)  and save as a npz file)
+ "cln025_aligned.npz": Exercise 3  (Align a CLN025 dcd trajectory to a reference structure and output a npz file of aligned Cartesian coordinates)
+ "chig_sin_rmsd_rg_data.npz": Exercise 3 (Extract and store sine-transformed dihedral angles, RMSD, and Rg data from CLN025 trajectory  and output a npz file )
