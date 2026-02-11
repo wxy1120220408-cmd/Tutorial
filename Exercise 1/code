@@ -1,0 +1,4 @@
+include
+Process.py  #extract backbone dihedral angle information
+PCA_kmeans.ipynb   #PCA_kmeans cluster
+tICA_kmeans.ipynb    #tICA_kmeans cluster
