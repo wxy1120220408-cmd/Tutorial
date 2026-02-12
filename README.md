@@ -1,11 +1,11 @@
 
 ## data file
 
-The data file is large and hosted on **Mendeley Data**:
+The data file is large and hosted on **Figshare**:
 
-**DOI**: [(https://doi.org/10.5281/XXXXXXX)
+**DOI**: (https://doi.org/10.6084/m9.figshare.31322308))
 
-# tripeptide_cln025_data
+# CLN025_Tripeptide_Simulation_Data
 "tripeptide_nowater.dcd" : Exercise 1 (trajectory files of alanine tripeptide removing water molecules and ions)
  "tripeptide_nowater.psf": Exercise 1 (topology files of alanine tripeptide removing water molecules and ions)
 "tri_sin_phi_data.npz": Exercise 1, 2 (Extract the sine values of six backbone dihedral angles of tripeptide trajectory, together with the corresponding dihedral angle values (φ)  and save as a npz file)
