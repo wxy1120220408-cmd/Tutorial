@@ -11,3 +11,4 @@ The data file is large and hosted on **Figshare**:
 "tri_sin_phi_data.npz": Exercise 1, 2 (Extract the sine values of six backbone dihedral angles of tripeptide trajectory, together with the corresponding dihedral angle values (φ)  and save as a npz file)
  "cln025_aligned.npz": Exercise 3  (Align a CLN025 dcd trajectory to a reference structure and output a npz file of aligned Cartesian coordinates)
  "chig_sin_rmsd_rg_data.npz": Exercise 3 (Extract and store sine-transformed dihedral angles, RMSD, and Rg data from CLN025 trajectory  and output a npz file )
+"1_cln025": The example configuration files illustrating how the extracted slow CVs can be incorporated into enhanced sampling simulations.
