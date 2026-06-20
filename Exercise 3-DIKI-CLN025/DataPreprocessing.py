@@ -11,7 +11,7 @@ warnings.filterwarnings("ignore")
 
 
 # extract positions of non-H atoms
-def alignDcd2Ref(psf_file_path, dcd_file_path,\
+def alignDcd2Ref(topology_file, dcd_file_path,\
                  reference_pdb_file, aligned_file, aligned_npz,\
                  selection='not (resname WAT) and not (resname Na+) and not (name H*)'):
     
@@ -20,7 +20,9 @@ def alignDcd2Ref(psf_file_path, dcd_file_path,\
     
     ------------------------------Input------------------------------
     
-    psf_file_path: str, topology file
+    topology_file: str, topology file
+               (e.g., .psf for NAMD trajectories or .mae for
+               D. E. Shaw Research trajectories)
     
     dcd_file_path: str, dcd file
     
@@ -42,8 +44,8 @@ def alignDcd2Ref(psf_file_path, dcd_file_path,\
     
     """
          
-    reference = mda.Universe(psf_file_path, reference_pdb_file)
-    dcd_to_align = mda.Universe(psf_file_path,dcd_file_path)
+    reference = mda.Universe(topology_file, reference_pdb_file)
+    dcd_to_align = mda.Universe(topology_file,dcd_file_path)
     
     align.AlignTraj(dcd_to_align,  # trajectory to align
                     reference,  # reference
@@ -53,8 +55,8 @@ def alignDcd2Ref(psf_file_path, dcd_file_path,\
                     ).run()
     
     # open the aligned DCD file
-    dcd_aligned = mda.Universe(psf_file_path,aligned_file)
-    psf_temp = mda.Universe(psf_file_path)
+    dcd_aligned = mda.Universe(topology_file,aligned_file)
+    psf_temp = mda.Universe(topology_file)
     
     position_list = []
     
